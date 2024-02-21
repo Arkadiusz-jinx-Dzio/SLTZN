@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Słodki tydzień pomocy</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .zdjecie{
+        width: 15%;
+        height:15%;
+        float:left;
+        margin-left: 10%;
+        margin-top: -10%;
+    }
+    .zdjecie-prawe{
+        width: 15%;
+        height:15%;
+        float:right;
+        margin-right: 10%;
+        margin-top: -10%;
+    }
+    .zdjecie-parafia{
+        width: 15%;
+        height: 15%;
+        float:right;
+        margin-right: 10%;
+        margin-top: -18%;
+        border-radius: 2%;
+    }
+    .zdjecie_su_sltzn{
+        width: 15%;
+        height: 15%;
+        float:right;
+        margin-right: 10%;
+        margin-top: 0%;
+        border-radius: 2%;
+    }
+    .zdjecie_zuckera{
+        width: 15%;
+        height:15%;
+        float:left;
+        margin-left: 10%;
+        margin-top: -17.9%;
+        border-radius: 2%;
+    }
+    .tel_gtch{
+        width:80%;
+        height:auto;
+        display:none;
+
+    }
+    .tel_sltzn{
+        width:80%;
+        height:auto;
+        display:none;
+    }
+    .tel_parafia{
+        width:80%;
+        height:auto;
+        display:none;
+    }
+    .tel_su_sltzn{
+        display:none;
+        width:80%;
+        height:auto;
+    }
+    .naglowek{
+        font-weight: bolder;
+        font-size: 350%;
+        font-family: 'Roboto', sans-serif;
+        color:rgb(0, 0, 0);
+        text-shadow: 2px 0px 0px #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff, 2px 2px 0px white, -2px -2px 0px white;
+        /*text-shadow: 4px 0px 0px #ffffff, 0px 4px 0 #ffffff, -4px 0px 0 #ffffff, 0px -4px 0 #ffffff;*/
+        /*text-shadow: 4px 0px 0px rgb(255, 255, 255), 0px 4px 0px #ffffff, -4px 0px 0px rgb(255, 255, 255), rgb(255, 255, 255)4px 0px rgb(255, 255, 255);*/
+        
+    }
+    #co-to{
+            background-color: #fff;
+            padding-top: 1%;
+            width:auto;
+            height:auto;
+            border-radius: 15px;
+            color: #002fff;
+            margin-bottom: 20px;
+            text-align: inherit;
+            font-size: 1.1em;
+            line-height: 1;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 35%;
+            margin-left: 35%;
+            transition: box-shadow 0.25s;
+            font-weight: bolder;
+            font-size: 125%;
+    }
+    #co-to:hover{
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    }
+    #akcja{
+            background-color: whitesmoke;
+            padding-top: 1%;
+            width:auto;
+            height:auto;
+            border-radius: 15px;
+            color: #002fff;
+            margin-bottom: 20px;
+            text-align: inherit;
+            font-size: 1.1em;
+            line-height: 1;
+            transition: box-shadow 0.15s;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 35%;
+            margin-left: 35%;
+            transition: box-shadow 0.25s;
+            font-weight: bolder;
+            font-size: 150%;
+            box-shadow: 2px, 2px, rgba(0, 0, 0, 0.8)
+    }
+    
+    body{
+        background: linear-gradient(to right, #258bff, #0c0247);
+
+    }
+    section{
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    }
+    @media screen and (max-width: 700px){
+        .naglowek{
+            font-size: 210%;
+            margin-right: 3%;
+            text-shadow: 2px 0px 0px #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff, 2px 2px 0px white, -2px -2px 0px white;
+        }
+        #co-to{
+            width:70%;
+            align:center;
+            height:auto;
+            margin-right: 0px;
+            margin-left: 0px;
+            font-size: 100%;
+        }
+        .zdjecie{
+            display: none;
+        }
+        .zdjecie-parafia{
+            display:none;
+        }
+        .zdjecie-prawe{
+            display:none;
+        }
+        #akcja{
+            font-size: medium;
+            width:80%;
+            margin-left: 7%;
+            margin-right: 10%;
+        }
+        .zdjecie_zuckera{
+            display:none;
+        }
+        .tel_gtch{
+            width:80%;
+            height:auto;
+            display:grid;
+            width:60%;
+            margin-top: 7%;
+            margin-bottom: 5%;
+        }
+        .tel_sltzn{
+            width:80%;
+            height:auto;
+            display:none;
+            display:grid;
+            width:60%;
+            margin-bottom: 10%;
+            
+        }
+        .tel_parafia{
+            width:80%;
+            height:auto;
+            display:contents;
+            display:grid;
+            width:60%;
+            border-radius: 4%;
+            margin-bottom: 9%;
+        }
+        .tel_su_sltzn{
+            width:80%;
+            height:auto;
+            display:none;
+            display:grid;
+            width:60%;
+            margin-bottom: 10%;
+            border-radius: 4%;
+        }
+        
+    }
+
+</style>
+<body>
+
+<header>
+  
+  <center>
+    <p class="naglowek">Słodki Tydzień Pomocy</p>
+    <p class="naglowek">26.02 - 03.03</p>
+    <a href="https://www.facebook.com/profile.php?id=100066458181520" target="_blank"><img src="gtch.png" class="zdjecie"></a>
+    <a href="http://sltzn.katowice.pl/" target="_blank"><img src="w_sltzn.png" class="zdjecie-prawe"></a>
+
+    <br>
+    <section id="akcja">
+       <p style="font-size: larger; margin-right: 2%;">ZBIERAMY CUKIER DLA GÓRNOŚLĄSKIEGO TOWARZYSTWA CHARYTATYWNEGO!</p>
+    </section>
+    <br>
+    <section id="co-to">
+        <h2>Jak można pomóc?</h2>
+        <p style="color:black; text-shadow:none; font-size: large; background-color: rgba(0, 174, 255, 0.507); border-radius: 3px;">Wystarczy przynieść dowolną ilość cukru do tych miejsc:</p><p style="color:black; text-shadow:none; font-size: large;">-Śląskie Techniczne Zakłady Naukowe w Katowicach  przy wyjściu z budynku 2(głównego)<br>
+        <br>-Zakrystia Parafii św. Józefa Robotnika w Katowicach na Józefowcu
+        ul. Mikusińskiego 8 do zakrystii</p>
+    </section>
+    <img src="zucker.jpg" class="zdjecie_zuckera">
+    <a href="https://jozefrobotnik.katowice.pl/" target="_blank"><img src="parafia.jpg" class="zdjecie-parafia"></a>
+    <a href="https://www.facebook.com/Samorzaduczniowskisltzn" target="_blank"><img src="su_sltzn.jpg" class="zdjecie_su_sltzn"></a>
+    <section id="co-to">
+        <h2>Co to Górnośląskie Towarzystwo Charytatywne?</h2>
+        <p style="color:black; text-shadow:none; font-size: large;">To jedna z pierwszych pozarządowych i pozakościelnych organizacji charytatywnych, założona w 1989r.
+            Prowadzi zbiórki odzieży dla potrzebujących, noclegownie, wydaje także posiłki dla bezdomnych, bezrobotnych i ubogich. 
+            Rocznie wydają ponad 120 tys. posiłków oraz ponad 50 tys. noclegów dla potrzebujących. 
+        </p>
+    </section>
+    <br>
+    <a href="https://www.facebook.com/profile.php?id=100066458181520" target="_blank"><img src="gtch.png" class="tel_gtch"></a>
+    <a href="http://sltzn.katowice.pl/" target="_blank"><img src="w_sltzn.png" class="tel_sltzn"></a>
+    <a href="https://jozefrobotnik.katowice.pl/" target="_blank"><img src="parafia.jpg" class="tel_parafia"></a>
+    <a href="https://www.facebook.com/Samorzaduczniowskisltzn" target="_blank"><img src="su_sltzn.jpg" class="tel_su_sltzn"></a>
+    <section id="co-to">
+        <a href="https://www.facebook.com/SlaskieTechniczneZakladyNaukowe/" target="_blank">Facebook Śl.TZN</a>
+        <br>
+        <a href="http://sltzn.katowice.pl/" target="_blank">Strona Śl.TZN</a>
+        <br>
+        <a href="https://jozefrobotnik.katowice.pl/" target="_blank">Strona Parafii św. Józefa Robotnika</a>
+        <br>
+        <a href="https://www.facebook.com/parafiajozefarobotnika" target="_blank">Facebook Parafii św. Józefa Robotnika</a>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100066458181520" target="_blank">Facebook Górnośląskiego Towarzystwa Charytatywnego</a>
+        <br>
+
+        <p>Akcja organizowana z pomocą wolontariatu Śl.TZN w Katowicach</p>
+        <p></p>
+    </section>
+  </center>
+
+</header>
+
+
+</body>
+</html>
